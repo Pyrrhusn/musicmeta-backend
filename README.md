@@ -1,38 +1,48 @@
-## Vereisten
+### Musicmeta - Solo project
 
-Ik verwacht dat volgende software reeds geïnstalleerd is:
+This is the server-side component to the [MusicMeta fontend](https://github.com/Pyrrhusn/musicmeta-frontend). It provides a RESTful API for managing and retrieving music metadata. The backend is built for efficiency, scalability, and modern JavaScript development standards. For a in-depth overview/explanation and screenshots, have a look at this [file](/dossier.md).
 
+#### Technologies Used
+
+- **Node.js** – The runtime environment for executing server-side JavaScript.
+- **Koa** – A lightweight and expressive web server framework for Node.js, used to handle all HTTP requests and responses.
+- **Middlewares** – Modular Koa middleware for request parsing, error handling, logging, authentication.
+- **JWT** - manage auth state
+- **Objection ORM** - relational mappings and querying of entites in MySQL database.
+
+#### Dependencies
+Following software is required to run this project:
 - [NodeJS](https://nodejs.org)
 - [Yarn](https://yarnpkg.com)
 - [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)
-- Dependencies uit [package.json](package.json)
+- Dependencies in [package.json](package.json)
 
-## Opstarten
+#### Startup
 
-1. Maak een `.env` bestand aan in de root met als inhoud:
+1. Create a `.env` file in the root directory with the following content:
 
 ```bash
 NODE_ENV=[production|development]
-DATABASE_USERNAME=LOGIN_GEBRUIKERSNAAM_VAN_MYSQL_DATABASE
-DATABASE_PASSWORD=LOGIN_WACHTWOORD_VAN_MYSQL_DATABASE
+DATABASE_USERNAME=YOUR_MYSQL_DATABASE_LOGIN_USERNAME
+DATABASE_PASSWORD=YOUR_MYSQL_DATABASE_LOGIN_PASSWORD
 ```
 
-2. Open een terminal en voer `yarn start` uit.
+2. Open a terminal and run `yarn start`.
 
-3. De url en poort zal in de terminal zichtbaar zijn.
+3. The URL and port will be visible in the terminal.
 
-## Testen
+#### Testing
 
-1. Maak een `.env.test` bestand aan in de root met als inhoud:
+1. Create a `.env.test` file in the root directory with the following content:
 
 ```bash
 NODE_ENV=test
-DATABASE_USERNAME=LOGIN_GEBRUIKERSNAAM_VAN_MYSQL_DATABASE
-DATABASE_PASSWORD=LOGIN_WACHTWOORD_VAN_MYSQL_DATABASE
+DATABASE_USERNAME=YOUR_MYSQL_DATABASE_LOGIN_USERNAME
+DATABASE_PASSWORD=YOUR_MYSQL_DATABASE_LOGIN_PASSWORD
 ```
 
-2. Open een terminal en voer `yarn test` uit.
+2. Open a terminal and run `yarn test`.
 
-3. Alle test suites zullen nu uitgevoerd worden en de resultaat zal ook in de terminal zichtbaar zijn.
+3. All test suites will now be executed and the results will also be visible in the terminal.
 
-Om de **_coverage test_** uit te voeren moet je op stap 2 in plaats van `yarn test`, `yarn test --coverage` uitvoeren. De coverage resultaten/report zal in de terminal zichtbaar zijn maar ook in een nieuwe folder _`coverage`_ onder _`__tests__/coverage`_.
+To run the **_coverage test_**, in step 2, run `yarn test --coverage` instead of `yarn test`. The coverage results/report will be visible in the terminal as well as in a new folder called _`coverage`_ under _`__tests__/coverage`_.
