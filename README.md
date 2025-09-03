@@ -2,7 +2,7 @@
 
 This is the server-side component to the [MusicMeta fontend](https://github.com/Pyrrhusn/musicmeta-frontend). It provides a RESTful API for managing and retrieving music metadata. The backend is built for efficiency, scalability, and modern JavaScript development standards. For a in-depth overview/explanation and screenshots, have a look at this [file](/dossier.md).
 
-#### Technologies Used
+#### Technologies Used (non-exhaustive)
 
 - **Node.js** – The runtime environment for executing server-side JavaScript.
 - **Koa** – A lightweight and expressive web server framework for Node.js, used to handle all HTTP requests and responses.
