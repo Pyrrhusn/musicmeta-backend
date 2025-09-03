@@ -1,0 +1,9 @@
+const { tables } = require('..');
+const { mockData } = require('../mock_data');
+
+module.exports = {
+  seed: async (knex) => {
+    await knex(tables.songGenre).delete();
+    await knex(tables.songGenre).insert([...mockData.SONG_GENRE]);
+  }
+}
