@@ -1,12 +1,3 @@
-# Pushwant Sagoo (202187670)
-
-- [x] Front-end Web Development:
-  - https://github.com/Web-IV/2324-frontendweb-PushwantSagoo
-  - https://two324-frontendweb-pushwantsagoo.onrender.com
-- [x] Web Services:
-  - https://github.com/Web-IV/2324-webservices-PushwantSagoo
-  - https://two324-webservices-pushwantsagoo.onrender.com
-
 **Logingegevens**
 
 Bepaalde pagina's zijn openbaar en vereisen geen account.
